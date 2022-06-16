@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -17,26 +18,27 @@ h1 {
 }
 
 .cards {
-    width: 1300px;
+    width: 1200px;
     display: flex;
     align-items: center;
+    margin-left: 150px;
     flex-wrap: wrap;
     gap: 34px;
     margin-bottom: 100px;
 }
 
-.cards-item {
+.card {
     border-radius: 5px;
     border: 1px solid #99CEA8;
     background-color: #A7E9AF;
-    width: 117px;
-    height: 130px;
+    width: 120px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cards-item img {
+.card img {
     width: 100px;
 }
 
