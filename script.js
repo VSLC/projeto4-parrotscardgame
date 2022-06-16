@@ -10,6 +10,19 @@ function comecaJogo() {
     }
 
     console.log(numeroCartas);
+    mostrarCartas();
 }
 
+function mostrarCartas() {
+    document.querySelector(".cards").innerHTML = "";
+    for (let index = 0; index < numeroCartas; index++) {
+        let template = `
+        <div class="card">
+            <img src="images/front.png">
+        </div>
+        `
+
+        document.querySelector(".cards").innerHTML += template;
+    }
+}
 comecaJogo();
