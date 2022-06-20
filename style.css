@@ -17,6 +17,12 @@ h1 {
     text-transform: uppercase;
 }
 
+.contador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .cards {
     width: 1200px;
     display: flex;
@@ -44,6 +50,7 @@ h1 {
 }
 
 .face  {
+    border-radius: 5px;
     width: 120px;
     height: 150px;
     background-color: #A7E9AF;
@@ -58,6 +65,7 @@ h1 {
     transition: all .5s;
     transform-style: preserve-3d;
 }
+
 
 .back-face {
     transform: rotateY(180deg);
