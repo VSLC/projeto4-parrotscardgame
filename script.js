@@ -101,5 +101,14 @@ function virarCartas(elemento) {
     }
 }
 
+function FinalizarPartida() {
+    let quantidadevirar = document.querySelectorAll(".card.virar")
+    if (quantidadevirar.length === numeroCartas) {
+        alert(`Você ganhou em ${contador} jogadas!`)
+        reiniciarPartida()
+    }
+}
+
+
 
 comecaJogo();
