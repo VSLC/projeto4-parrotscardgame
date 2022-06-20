@@ -49,11 +49,11 @@ function mostrarCartas() {
 
     for (let index = 0; index < numeroCartas; index++) {
         let template = `
-        <div class="card" onclick="virarCartas(this);"  >
-            <div class="front-face face">
+        <div class="card" onclick="virarCartas(this);" data-identifier="card">
+            <div class="front-face face" data-identifier="front-face">
                 <img src="images/front.png">    
             </div>
-            <div class="back-face face">
+            <div class="back-face face" data-identifier="back-face">
                 <img src="images/${listaImagens[index]}">
             </div>
         </div>
