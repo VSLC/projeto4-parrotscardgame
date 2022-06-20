@@ -109,6 +109,33 @@ function FinalizarPartida() {
     }
 }
 
+function reiniciarPartida() {
+    let resposta = prompt("reiniciar a partida?(sim ou não)")
+    while (resposta !== 'não' && resposta !== 'sim') {
+        resposta = prompt("reiniciar a partida?(sim ou não)")
+    }
+    if (resposta === 'sim') {
+        comecaJogo()
+    }
+    if (resposta === 'não') {
+        alert("Até a próxima")
+    }
+}
 
+function relogioContar() {
+    contadorRelogio = document.querySelector(".contador");
+    contadorRelogio.innerHTML = `${relogio}s`;
+    addSegundo();
+}
+
+function addSegundo() {
+    return relogio++;
+}
+
+function zeraRelogio() {
+    relogio = 0;
+}
+
+setInterval(relogioContar, 1000);
 
 comecaJogo();
